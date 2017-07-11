@@ -60,9 +60,7 @@
 
  <xsl:template match="c:caption/c:para">
      <xsl:message>para under caption</xsl:message>
-     <xsl:element name="caption">
-         <xsl:apply-templates select="node()|@*"/>
-     </xsl:element>
+         <xsl:apply-templates select="node()"/>
  </xsl:template>
 
  <xsl:template match="c:newline"/>
